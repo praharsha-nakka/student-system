@@ -1,0 +1,105 @@
+/* Styling the form container */
+.card {
+  max-width: 600px; /* Increased form width for more space */
+  margin: 40px auto; /* Center the form with extra space above and below */
+  padding: 30px;
+  border-radius: 20px; /* Larger rounded corners */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Deeper shadow for a more dynamic look */
+  background-color: #f5f5f5; /* Light gray background */
+  overflow: hidden; /* Prevent content from spilling over */
+}
+
+/* Header styling */
+.card h2 {
+  text-align: left;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changed font */
+  color: #2c3e50; /* Darker gray for header */
+}
+
+/* Input field styling */
+.form-control {
+  border-radius: 10px; /* Increased border radius for smoother edges */
+  padding: 14px 18px;
+  font-size: 1.1rem; /* Slightly larger font size */
+  margin-bottom: 18px; /* Added more spacing between inputs */
+  border: 1px solid #dcdcdc; /* Lighter border for a clean look */
+  background-color: #ffffff; /* White background for inputs */
+  transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Added smooth transitions */
+}
+
+.form-control:focus {
+  border-color: #27ae60; /* Green border on focus */
+  box-shadow: 0 0 10px rgba(39, 174, 96, 0.5); /* Green shadow */
+}
+
+/* Checkbox styling */
+.form-check-label {
+  font-size: 1rem; /* Increased font size */
+  color: #34495e; /* Dark gray color for checkbox labels */
+}
+
+.form-check-input {
+  margin-top: 3px;
+}
+
+/* Button styling */
+.btn {
+  padding: 12px 20px;
+  font-size: 1.1rem; /* Larger font size for button */
+  border-radius: 25px; /* Fully rounded button */
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase; /* Uppercase button text */
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: #e74c3c; /* Vibrant red for the button */
+  border-color: #e74c3c;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #c0392b; /* Darker red on hover */
+  border-color: #c0392b;
+  transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+.btn:focus {
+  box-shadow: 0 0 8px rgba(231, 76, 60, 0.7); /* Red shadow on button focus */
+}
+
+/* Add responsiveness for smaller screens */
+@media (max-width: 576px) {
+  .card {
+    padding: 25px;
+    margin: 15px auto; /* Reduced space for small screens */
+  }
+
+  .form-control {
+    font-size: 1rem; /* Adjusted font size on small screens */
+    padding: 12px;
+  }
+
+  .btn {
+    padding: 12px 18px;
+    font-size: 1rem;
+  }
+}
+
+/* Card animation on page load */
+.card {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
